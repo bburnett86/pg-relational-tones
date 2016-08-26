@@ -1,0 +1,10 @@
+<div class="errors-container">
+  <h4 class="errors-header">ERRORS:</h1>
+  <% if @errors %>
+    <ol class="errors-list">
+      <% @errors.uniq.each do |error| %>
+        <li class="error-list-item"><%= error %></li>
+      <% end %>
+    </ol>
+  <% end %>
+</div>

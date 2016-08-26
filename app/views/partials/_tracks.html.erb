@@ -1,0 +1,8 @@
+<div id = "tracks ">
+  <p class= "backTrack">Choose A Different Playlist</p>
+  <% tracks.each do |track| %>
+    <%= render partial: "partials/track", locals: {track: track} %>
+  <% end %>
+</div>
+<br>
+<br>

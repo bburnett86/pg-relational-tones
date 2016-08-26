@@ -1,0 +1,188 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *= require jquery-ui
+ *= require jquery-ui/draggable
+ *= require jquery-ui/selectable
+ *= require_tree .
+ *= require_self
+ */
+
+.grad {
+  background: #66B0FA; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#66B0FA, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#66B0FA, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#66B0FA, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#66B0FA, white); /* Standard syntax */
+  background-size: 100% 100%;
+  background-repeat: no-repeat}
+
+.master_scroll_images_params{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+.master_scroll_image{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.centerColumn{
+  margin-left: 64px;
+  margin-bottom:  auto;
+  margin-top: auto;
+  margin-right: 64px;
+  height: 290px;
+  overflow: scroll;
+}
+
+div#carouselContainer {
+  /*height: 240px;*/
+}
+
+#carouselContainer #myCarousel {
+  /*height: 192px;*/
+}
+
+.rightColumn{
+  margin-left: 64px;
+  margin-bottom:  auto;
+  margin-top: auto;
+  margin-right: auto;
+  height: 290px;
+  overflow: scroll;
+}
+
+.mainColumns{
+  text-align: center;
+  float: none;
+  margin: auto;
+  width: 80%;
+}
+
+.itemButtons {
+    list-style: none;
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    color: black;
+    border-radius: 15;
+}
+
+.trackButtons {
+    list-style: none;
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    color: black;
+    border-radius: 15;
+}
+
+.draggable {
+    list-style: none;
+    background: white;
+    width: 200px;
+    color: black;
+    line-height: 60px;
+    border-radius: 15px;
+}
+
+.carousel-control{
+  background-color: #66B0FA;
+  opacity: 1.6;
+}
+
+.jumbotron{
+ background: #C6B0C7;
+ opacity: .9;
+}
+
+.droppable{
+  height: 80%;
+  width: 80%;
+}
+
+.imgdrop{
+  height: 80%;
+  width: 80%;
+}
+
+.centerContent{
+  text-align: center;
+  margin: 0 auto;
+  float: none;
+}
+
+.showColumn{
+  height: 225px;
+  overflow: scroll;
+}
+
+
+@media (min-width: 992px){
+  .col-md-3 {
+  float: none;
+  }
+}
+
+.trackName{
+  color: grey;
+}
+
+.fullWidth{
+  width: 100%
+}
+
+iframe {
+  width: 80%;
+}
+
+.navBar{
+  width: 100%;
+  display: inline-block;
+}
+
+.home{
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+.logout{
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+
+.sugLink{
+  position: relative;
+  bottom: 0;
+}
+
+.hoverOpac:hover{
+  opacity: .7;
+}
+
+.loginButton {
+    list-style: none;
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    color: black;
+    border-radius: 15;
+    padding: 15px;
+    background: white;
+}

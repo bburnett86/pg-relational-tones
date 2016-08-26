@@ -1,0 +1,13 @@
+<div class = 'container'>
+  <div class="jumbotron">
+    <h1 class="">Login</h1>
+    <% if flash[:errors] %>
+      <%= render partial: 'partials/errors' %>
+    <% end %>
+    <%= form_for(@user, url: url_for(action: 'login', controller: 'session')) do |f| %>
+      <%= f.email_field :email, placeholder: "Your Spotify Email" %>
+      <%= f.password_field :password, placeholder: "Your Relational Tones Password" %>
+      <%= f.submit "Login" %>
+    <% end %>
+  </div>
+</div>
