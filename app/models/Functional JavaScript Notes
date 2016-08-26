@@ -1,0 +1,68 @@
+Functional JavaScript
+
+  Objects
+    A data structure where we store data
+    We can store properties: functions, strings, numbers, objects, arrays, etc.
+    Key value pairs, key is a string
+    Blueprint of a class
+    The data we store can be any type.
+
+    Data:
+
+      var box = {};
+
+    Assignment with Dots
+
+      var box = {};
+      box.material = "cardboard";
+
+      Thus
+
+      var box =
+      {"material" : "cardboard"}
+
+      Above code assigns the key "material" to the value "cardboard"
+
+      Whenever you use dot, whatever's to the left of the dot is an object. Whether it's an array, function whatever it's ALWAYS an object.
+
+    Access with Dots
+
+      var box = {};
+
+      box.material = "cardboard"
+
+      var cb = box.material;
+
+      cb; //"cardboard"
+
+      box.material = "titanium";
+
+      cb;// "cardboard"
+
+      box.size; //undefined
+      We get undefined when we look up the property of an object that does not exist.
+
+    Brackets
+
+      var box = {};
+      box["material"] = "cardboard";
+      box.material; // "cardboard"
+      var cb = box["material"]; // "cardboard"
+
+    Variables
+
+      var box = {};
+
+      box["material"] = "cardboard";
+
+      var key = "material"
+
+      box[key]; //"cardboard"
+
+  Arrays
+
+  Functions
+
+  Looping
+
+  Scope

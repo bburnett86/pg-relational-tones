@@ -1,0 +1,30 @@
+<div class = "container">
+  <div class = "jumbotron" id="carouselContainer">
+    <div class="roller">
+      <%= render partial: 'partials/carousel', locals: {tracks: @tracks} %>
+    </div>
+  </div>
+  <div class="mainColumns container">
+    <div class="jumbotron col-md-3 centerColumn">
+      <p class="header">Accepts playlist suggestions</p>
+      <div class = "droppable">
+        <div class= "sugForm">
+
+          <div class="track-container left-track-container" id="suggestion-elements">
+
+          </div>
+          <%= link_to "Create Suggestions", "/playlists/temp", class: "sugLink" %>
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron col-md-6 rightColumn">
+      <div class="track-container content-acd">
+        <p class="header">Choose A Playlist</p>
+        <%= render partial: "partials/all", locals: { playlists: @playlists } %>
+      </div>
+    </div>
+    <div class = "spotifyPlayer centerContent">
+      <%= render partial: 'partials/player', locals: { track: @tracks.first} %>
+    </div>
+  </div>
+</div>

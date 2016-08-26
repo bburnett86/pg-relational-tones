@@ -1,0 +1,15 @@
+<div class = 'container'>
+    <div class="jumbotron">
+    <h1>Register For Relational Tones</h1>
+    <% if !@user.errors.empty? %>
+      <%= render partial: 'partials/errors' %>
+    <% end %>
+    <%= form_for(@user) do |f| %>
+      <%= f.hidden_field(:email, value: @spotify_user.email) %>
+      <%= f.hidden_field(:obj_hash, value: @spotify_user.to_json) %>
+      <%= f.password_field :password, placeholder: "Password" %>
+      <%= f.password_field :password_confirmation, placeholder: "Re-Enter Password" %>
+      <%= f.submit "Register" %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class = "container">
+  <div class = "jumbotron">
+    <div class="roller">
+      <%= render partial: 'partials/carousel', locals: {tracks: @tracks} %>
+    </div>
+  <div class="mainColumns container ">
+    <div class="jumbotron col-md-6 col-md-offset-3 showColumn">
+        <div class="content-acd">
+          <%= render partial: "partials/tracks", locals: { tracks: @playlist.tracks } %>
+        </div>
+    </div>
+  </div>
+  <div class = "spotifyPlayer centerContent">
+    <%= render partial: 'partials/player', locals: { track: @tracks.first} %>
+  </div>
+</div>

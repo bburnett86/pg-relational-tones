@@ -1,0 +1,39 @@
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <% tracks.each_with_index do |track, index| %>
+          <% if index == 0 %>
+            <li data-target="#myCarousel" id="<%= track.id %>" data-slide-to="<%= index %>" class="active"></li>
+          <% else %>
+            <li data-target="#myCarousel" id="<%= track.id %>" data-slide-to="<%= index %>"></li>
+          <% end %>
+        <% end %>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <% tracks.each_with_index do |track, index| %>
+          <% if index == 0 %>
+            <div id="<%= track.id %>" class="item active master_scroll_images_params">
+              <img id="<%= track.id %>" class="master_scroll_image draggable" src="<%= track.obj.album.images[0]['url'] %>">
+            </div>
+          <% else %>
+            <div id="<%= track.id %>" class="item master_scroll_images_params">
+              <img id="<%= track.id %>" class="master_scroll_image draggable" src="<%= track.obj.album.images[0]['url'] %>">
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control click-check" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control click-check" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </div>
